@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
   Tag.findAll({
     include: [
       {
-        model: Product.
+        model: Product,
         through: ProductTag,
       },
     ],

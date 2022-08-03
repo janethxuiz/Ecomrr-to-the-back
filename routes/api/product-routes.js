@@ -122,18 +122,18 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
-  Product.delete({
+  Product.destroy({
     where: {
       id: req.params.id
     }
   })
   .then(products => {
     console.log(products);
-    req.json(products);
+    res.json(products);
   })
   .catch(err => {
     console.log(err);
-    req.status(400).json(err);
+    res.status(400).json(err);
   });
 });
 
