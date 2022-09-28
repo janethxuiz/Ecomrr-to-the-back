@@ -1,7 +1,7 @@
 {
   "name": "ecomrr-to-the-back",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project is the creation of the back end for an e-commerce site. This application used Express.js API and Sequelize to interact with a MySQL database. This application displays creation of database using mySQL with models and associations.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,8 +20,9 @@
   },
   "homepage": "https://github.com/janethxuiz/Ecomrr-to-the-back#readme",
   "dependencies": {
-    "dotenv": "^16.0.1",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.21.3"
+    "sequelize": "^6.23.2"
   }
 }
